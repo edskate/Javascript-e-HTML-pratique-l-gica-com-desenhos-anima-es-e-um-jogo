@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<h1>Edeia de funcção</h1>
+
+<script>
+
+function desenhaQuadrado(x, y, cor) {
+
+
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+
+pincel.fillStyle = cor;
+pincel.fillRect(x, y, 50, 50);
+pincel.fillStroke = 'black';
+pincel.strokeRect(x, y, 50, 50);
+
+
+}
+
+function desenhaQuadradoVermelho(x, y) {
+
+
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50);
+
+
+    }
+
+desenhaQuadrado(0, 0, 'blue');
+desenhaQuadrado(0, 50, 'red');
+desenhaQuadrado(0,100, 'yellow');
+
+</script>

@@ -1,0 +1,41 @@
+<canvas width="600" height="400"></canvas>
+
+<h1>DesenhaquadradoVermelho; </h1>
+
+<h2>Um quadrado abaixo do outro;</h2>
+
+<h2>Copia Função.</h2>
+
+<script>
+
+function desenhaQuadradoVerde(x, y) {
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+
+pincel.fillStyle = 'green';
+pincel.fillRect(x, y, 50, 50);
+pincel.fillStroke = 'black';
+pincel.strokeRect(x, y, 50, 50);
+
+}
+
+function desenhaQuadradoVermelho(x, y) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50);
+
+    }
+
+
+desenhaQuadradoVerde(0, 0);
+desenhaQuadradoVermelho(0, 50);
+desenhaQuadradoVerde(0, 100);
+</script>

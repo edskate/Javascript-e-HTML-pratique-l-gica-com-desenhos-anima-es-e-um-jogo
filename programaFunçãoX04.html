@@ -1,0 +1,25 @@
+<canvas width="600" height="400"></canvas>
+
+<h1>Desenhaquadradoverde; + função aceitar o paramentro X</h1>
+
+<h2>Está função recarrega 3 qudrados com X.</h2>
+
+<script>
+
+function desenhaQuadradoVerde(x) {
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+
+pincel.fillStyle = 'green';
+pincel.fillRect(x, 0, 50, 50);
+pincel.fillStroke = 'black';
+pincel.strokeRect(x, 0, 50, 50);
+
+}
+
+desenhaQuadradoVerde(0);
+desenhaQuadradoVerde(50);
+desenhaQuadradoVerde(100);
+</script>
